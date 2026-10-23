@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Environment variables — never commit secrets
+.env
+
+# SQLite database — generated at runtime
+data/omnilens.db
+
+# Uploaded files — generated at runtime (keep .gitkeep to preserve dir)
+data/uploads/*
+!data/uploads/.gitkeep
+
+# ChromaDB storage — generated at runtime
+data/chroma_db/*
+!data/chroma_db/.gitkeep
+
+# YOLO / ML model weights cache
+*.pt
+*.onnx
+~/.cache/ultralytics/
+
+# IDE / OS
+.vscode/
+.idea/
+*.DS_Store
+Thumbs.db

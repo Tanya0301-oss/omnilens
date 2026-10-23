@@ -1,0 +1,80 @@
+/* ============================================================
+   OmniLens — Design System Tokens
+   /frontend/src/styles/theme.css
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Core Color System */
+  --bg:               #090909;
+  --surface:          #111010;
+  --surface-elevated: #171515;
+  --border:           #292525;
+  --border-subtle:    #211E1E;
+
+  /* Aliases for dashboard & layout compatibility */
+  --bg-base:          var(--bg);
+  --bg-surface:       var(--surface);
+  --bg-raised:        var(--surface-elevated);
+  --bg-hover:         #1d1a1a;
+  --bg-active:        #242020;
+  --divider:          var(--border);
+  --border-normal:    var(--border);
+  --border-strong:    #3a3434;
+
+  /* Typography Colors */
+  --text-primary:     #F1ECE7;
+  --text-secondary:   #A39B94;
+  --text-muted:       #706A65;
+  --text-tertiary:    var(--text-muted);
+  --text-disabled:    #47423e;
+
+  /* Accent Colors — Primary Crimson / Oxblood */
+  --accent:           #B52A32;
+  --accent-hover:     #C43A43;
+  --accent-dim:       rgba(181, 42, 50, 0.12);
+  --accent-border:    rgba(181, 42, 50, 0.35);
+
+  /* Secondary Warm Accent */
+  --tone-sand:        #C9B99F;
+  --tone-sand-dim:    rgba(201, 185, 159, 0.10);
+
+  /* Semantic Status Colors (warm desaturated) */
+  --ok:               #5c8560;
+  --ok-dim:           rgba(92, 133, 96, 0.14);
+  --warn:             #8a6e35;
+  --warn-dim:         rgba(138, 110, 53, 0.14);
+  --err:              #8a3a3a;
+  --err-dim:          rgba(138, 58, 58, 0.14);
+
+  /* Typography Families */
+  --font-display:     'Instrument Serif', Georgia, serif;
+  --font-sans:        'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono:        'IBM Plex Mono', 'JetBrains Mono', monospace;
+
+  /* Radii */
+  --radius-xs:        3px;
+  --radius-sm:        5px;
+  --radius-md:        8px;
+  --radius-lg:        12px;
+
+  /* Shadows */
+  --shadow-sm:        0 1px 3px rgba(0, 0, 0, 0.45);
+  --shadow-md:        0 4px 16px rgba(0, 0, 0, 0.55);
+  --shadow-lg:        0 12px 36px rgba(0, 0, 0, 0.7);
+
+  /* Transitions */
+  --t-fast:           120ms ease;
+  --t-std:            220ms ease;
+  --t-slow:           380ms ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

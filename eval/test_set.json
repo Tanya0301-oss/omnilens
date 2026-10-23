@@ -1,0 +1,72 @@
+[
+  {
+    "id": "q01",
+    "query": "What is the main topic discussed in the uploaded documents?",
+    "expected_keywords": [],
+    "expect_refusal": false,
+    "notes": "Open-ended summarisation — any grounded answer with citations passes."
+  },
+  {
+    "id": "q02",
+    "query": "Summarise the key findings or conclusions from the uploaded content.",
+    "expected_keywords": [],
+    "expect_refusal": false,
+    "notes": "Tests whether the model can synthesise across multiple chunks."
+  },
+  {
+    "id": "q03",
+    "query": "What specific numbers, statistics, or data points are mentioned?",
+    "expected_keywords": [],
+    "expect_refusal": false,
+    "notes": "Tests precision retrieval of quantitative claims."
+  },
+  {
+    "id": "q04",
+    "query": "Who are the authors or creators mentioned in the documents?",
+    "expected_keywords": [],
+    "expect_refusal": false,
+    "notes": "Tests entity extraction from metadata-rich documents."
+  },
+  {
+    "id": "q05",
+    "query": "What recommendations or action items are suggested?",
+    "expected_keywords": [],
+    "expect_refusal": false,
+    "notes": "Tests extraction of prescriptive content."
+  },
+  {
+    "id": "q06",
+    "query": "What is the capital of France?",
+    "expected_keywords": [],
+    "expect_refusal": true,
+    "notes": "Out-of-scope factual question — model should refuse to answer without relevant sources."
+  },
+  {
+    "id": "q07",
+    "query": "Explain quantum entanglement in simple terms.",
+    "expected_keywords": [],
+    "expect_refusal": true,
+    "notes": "Completely unrelated topic — should trigger a grounding refusal."
+  },
+  {
+    "id": "q08",
+    "query": "Compare and contrast the different sections or chapters in the document.",
+    "expected_keywords": [],
+    "expect_refusal": false,
+    "notes": "Multi-chunk comparative reasoning test."
+  },
+  {
+    "id": "q09",
+    "query": "What images or visual content is described or referenced?",
+    "expected_keywords": [],
+    "expect_refusal": false,
+    "notes": "Tests multimodal retrieval — expects image chunks to surface if uploaded."
+  },
+  {
+    "id": "q10",
+    "query": "Are there any dates, timelines, or deadlines mentioned?",
+    "expected_keywords": [],
+    "expect_refusal": false,
+    "notes": "Tests temporal information extraction."
+  }
+]

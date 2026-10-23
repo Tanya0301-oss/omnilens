@@ -1,0 +1,47 @@
+# ============================================================
+# OmniLens — Python dependencies
+# Install with:  pip install -r requirements.txt
+# Python 3.10+ required
+# ============================================================
+
+# Backend
+fastapi
+uvicorn[standard]
+python-multipart
+
+# Vector DB + Metadata
+chromadb
+
+# PDF / Image processing
+pymupdf
+pytesseract
+pillow
+ultralytics
+
+# Audio / Video (stretch goal)
+openai-whisper
+opencv-python
+ffmpeg-python
+
+# Embeddings
+sentence-transformers
+open-clip-torch
+transformers
+torch
+
+# Caching
+diskcache
+
+# LLM / VLM generation
+groq
+
+# Frontend (choose one)
+streamlit
+
+# Utilities
+python-dotenv
+pydantic
+
+# Testing / development
+requests       # used by test_ingestion.py
+reportlab      # used by test_ingestion.py to generate a synthetic PDF
